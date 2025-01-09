@@ -1,4 +1,4 @@
-//import { HamburgerIcon } from "@/icons/icons"
+import { HamburgerIcon } from "@/icons/icons"
 import { useState } from "react"
 import { MobileMenu } from "./MobileMenu"
 import { useEffect } from "react"
