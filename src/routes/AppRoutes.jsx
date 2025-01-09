@@ -7,7 +7,8 @@ import { Map } from "@/pages/Map/Map"
 import { NotFound } from "@/pages/NotFound"
 import { Opinions } from "@/pages/Opinions"
 import { ROUTES } from "@/routes/RouteConfig"
-import { BrowserRouter, Route, Routes } from "react-router"
+import { useEffect } from "react"
+import { BrowserRouter, Route, Routes, useLocation } from "react-router"
 
 export function AppRoutes() {
   return (
@@ -23,6 +24,17 @@ export function AppRoutes() {
           <Route path={ROUTES.NOT_FOUND.path} element={<NotFound />} />
         </Route>
       </Routes>
+      <ScrollToTop />
     </BrowserRouter>
   )
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
 }
