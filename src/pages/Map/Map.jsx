@@ -1,4 +1,5 @@
 import { DocumentTitle } from "@/components/DocumentTitle"
+import { useFadeInOnce } from "@/hooks/useFadeInOnce"
 import {
   Aeropuerto,
   BellezaNatural,
@@ -9,27 +10,40 @@ import { ROUTES } from "@/routes/RouteConfig"
 import { GoogleMap } from "./GoogleMap"
 
 export function Map() {
+  const { ref: titleRef, animationStyles: titleStyles } = useFadeInOnce()
+  const { ref: mapRef, animationStyles: mapStyles } = useFadeInOnce()
+  const { ref: textRef, animationStyles: textStyles } = useFadeInOnce()
+  const { ref: textRef2, animationStyles: textStyles2 } = useFadeInOnce()
+
   return (
     <>
       <DocumentTitle title={ROUTES.MAP.title} />
       {/* TITULO */}
       <SectionPage>
-        <h1 className="text-4xl font-bold">Ubicación</h1>
+        <h1 ref={titleRef} style={titleStyles} className="text-4xl font-bold">
+          Ubicación
+        </h1>
       </SectionPage>
 
       {/* MAPA */}
       <SectionPage>
-        <GoogleMap client:load />
+        <div ref={mapRef} style={mapStyles}>
+          <GoogleMap client:load />
+        </div>
       </SectionPage>
 
       {/* ALREDEDORES */}
       <SectionPage>
         {/* grilla de 3 columnas con titulo */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-x-16">
+        <div
+          ref={textRef}
+          style={textStyles}
+          className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-x-16"
+        >
           {/* Columna 1 */}
           <div className="col-span-1 flex flex-col">
             <div className="mb-6 flex gap-2">
-              <CercaIcon className="text-[#4f5712] fill-[#4f5712]" />
+              <CercaIcon className="fill-[#4f5712] text-[#4f5712]" />
               <h2 className="text-lg font-bold">¿Qué hay cerca?</h2>
             </div>
             <div className="grid grid-cols-[1fr,6ch] gap-3">
@@ -64,10 +78,8 @@ export function Map() {
           <div className="col-span-1 flex flex-col gap-16">
             <div className="flex flex-col">
               <div className="mb-6 flex gap-2">
-                <RestaurantIcon className="text-[#4f5712] fill-[#4f5712]" />
-                <h2 className="text-lg font-bold">
-                  Restaurantes y cafés
-                </h2>
+                <RestaurantIcon className="fill-[#4f5712] text-[#4f5712]" />
+                <h2 className="text-lg font-bold">Restaurantes y cafés</h2>
               </div>
               <div className="grid grid-cols-[1fr,6ch] gap-2">
                 <span className="text-[#616161]">Restaurante La Primavera</span>
@@ -83,10 +95,8 @@ export function Map() {
 
             <div className="flex flex-col">
               <div className="mb-6 flex gap-2">
-                <BellezaNatural className="text-[#4f5712] fill-[#4f5712]" />
-                <h2 className="text-lg font-bold">
-                  Belleza natural
-                </h2>
+                <BellezaNatural className="fill-[#4f5712] text-[#4f5712]" />
+                <h2 className="text-lg font-bold">Belleza natural</h2>
               </div>
               <div className="grid grid-cols-[1fr,6ch] gap-2">
                 <span className="text-[#616161]">Montaña Cerro Uritorco</span>
@@ -98,10 +108,8 @@ export function Map() {
           {/* Columna 3*/}
           <div className="col-span-1 flex flex-col">
             <div className="mb-6 flex gap-2">
-              <Aeropuerto className="text-[#4f5712] fill-[#4f5712]" />
-              <h2 className="text-lg font-bold">
-                Aeropuertos más cercanos
-              </h2>
+              <Aeropuerto className="fill-[#4f5712] text-[#4f5712]" />
+              <h2 className="text-lg font-bold">Aeropuertos más cercanos</h2>
             </div>
             <div className="grid grid-cols-[1fr,6ch] gap-2">
               <span className="text-[#616161]">Aeropuerto de La Cumbre</span>
@@ -116,7 +124,7 @@ export function Map() {
           </div>
         </div>
         {/* fin grilla de 3 columnas con titulo */}
-        <div className="mt-8 flex">
+        <div ref={textRef2} style={textStyles2} className="mt-8 flex">
           <span className="text-sm text-[#616161]">
             * Las distancias se miden en línea recta. La distancia de viaje real
             puede variar.

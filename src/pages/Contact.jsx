@@ -1,14 +1,22 @@
 import { DocumentTitle } from "@/components/DocumentTitle"
+import { useFadeInOnce } from "@/hooks/useFadeInOnce"
 import { EmailIcon, InstagramIcon, WhatsappIcon } from "@/icons/Icons"
 import { ROUTES } from "@/routes/RouteConfig"
 
 export function Contact() {
+  const { ref: titleRef, animationStyles: titleStyles } = useFadeInOnce()
+  const { ref: imgRef, animationStyles: imgStyles } = useFadeInOnce()
+
   return (
     <>
       <DocumentTitle title={ROUTES.CONTACT.title} />
       <SectionPage>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-[40ch,1fr] md:gap-4">
-          <div className="flex flex-col gap-4">
+          <div
+            ref={titleRef}
+            style={titleStyles}
+            className="flex flex-col gap-4"
+          >
             <h2 className="text-4xl font-bold">Contáctanos</h2>
             <div className="mb-5 flex items-center gap-6">
               <p>
@@ -62,7 +70,11 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-4 p-0 md:px-6 self-end">
+          <div
+            ref={imgRef}
+            style={imgStyles}
+            className="flex flex-col items-center justify-center gap-4 self-end p-0 md:px-6"
+          >
             <img
               src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/484436678.jpg?k=99a49a2b3e9f056b1c3d46e4cc3e550ea0c3619b73f79f88f8f65e953edc3fa4&o=&hp=1"
               className="h-auto w-full rounded-md"

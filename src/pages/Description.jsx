@@ -3,6 +3,7 @@ import antesDeReservar from "@/data/antes-de-reservar.json"
 import distCaracteristicas from "@/data/distribucion-y-caracteristicas.json"
 import servPopulares from "@/data/servicios-populares.json"
 import servicios from "@/data/servicios.json"
+import { useFadeInOnce } from "@/hooks/useFadeInOnce"
 import {
   BebidaIcon,
   CocinaIcon,
@@ -51,16 +52,42 @@ const pageIcons = {
 }
 
 export function Description() {
+  const { ref: titleRef, animationStyles: titleStyles } = useFadeInOnce()
+  const { ref: titleRef2, animationStyles: titleStyles2 } = useFadeInOnce()
+  const { ref: textRef, animationStyles: textStyles } = useFadeInOnce()
+
+  const { ref: titleRef3, animationStyles: titleStyles3 } = useFadeInOnce()
+  const { ref: textRef2, animationStyles: textStyles2 } = useFadeInOnce()
+
+  const { ref: titleRef4, animationStyles: titleStyles4 } = useFadeInOnce()
+  const { ref: textRef3, animationStyles: textStyles3 } = useFadeInOnce()
+
+  const { ref: titleRef5, animationStyles: titleStyles5 } = useFadeInOnce()
+  const { ref: textRef4, animationStyles: textStyles4 } = useFadeInOnce()
+
+  const { ref: titleRef6, animationStyles: titleStyles6 } = useFadeInOnce()
+  const { ref: textRef5, animationStyles: textStyles5 } = useFadeInOnce()
+
   return (
     <>
       <DocumentTitle title={ROUTES.DESCRIPTION.title} />
       {/* DESCRIPCION */}
       <SectionPage>
-        <h2 className="text-[12px] font-extrabold uppercase tracking-wider">
+        <h2
+          ref={titleRef}
+          style={titleStyles}
+          className="text-[12px] font-extrabold uppercase tracking-wider"
+        >
           Casa de Campo
         </h2>
-        <h3 className="text-4xl font-bold">Las Tres Herraduras</h3>
-        <div className="mt-4 flex flex-col gap-4">
+        <h3 ref={titleRef2} style={titleStyles2} className="text-4xl font-bold">
+          Las Tres Herraduras
+        </h3>
+        <div
+          ref={textRef}
+          style={textStyles}
+          className="mt-4 flex flex-col gap-4"
+        >
           <p className="leading-relaxed">
             Ofrece vistas al jardín y alojamiento con terraza y balcón a unos 44
             km del centro comercial Córdoba. Ofrece pileta privada, wifi gratis
@@ -79,10 +106,14 @@ export function Description() {
       {/* COMODIDADES */}
       <SectionPage>
         <div>
-          <h3 className="text-2xl font-bold">
+          <h3
+            ref={titleRef3}
+            style={titleStyles3}
+            className="text-2xl font-bold"
+          >
             Distribución y características:
           </h3>
-          <ul className="mt-5">
+          <ul ref={textRef2} style={textStyles2} className="mt-5">
             {distCaracteristicas.map((item, index) => {
               const Icon = pageIcons[item.icon]
 
@@ -102,8 +133,14 @@ export function Description() {
 
       {/* SERVICIOS */}
       <SectionPage>
-        <h3 className="text-2xl font-bold">Servicios</h3>
-        <div className="mt-2 grid grid-cols-1 flex-col gap-5 md:grid-cols-3 md:gap-6">
+        <h3 ref={titleRef4} style={titleStyles4} className="text-2xl font-bold">
+          Servicios
+        </h3>
+        <div
+          ref={textRef3}
+          style={textStyles3}
+          className="mt-2 grid grid-cols-1 flex-col gap-5 md:grid-cols-3 md:gap-6"
+        >
           {servicios.map((item, index) => {
             const Icon = pageIcons[item.icon]
 
@@ -141,10 +178,18 @@ export function Description() {
 
       {/* SERVICIOS MAS POPULARES */}
       <SectionPage>
-        <h2 className="mt-5 text-[12px] font-extrabold uppercase tracking-wider">
+        <h2
+          ref={titleRef5}
+          style={titleStyles5}
+          className="mt-5 text-[12px] font-extrabold uppercase tracking-wider"
+        >
           Servicios mas populares
         </h2>
-        <div className="mt-3 flex flex-wrap gap-4">
+        <div
+          ref={textRef4}
+          style={textStyles4}
+          className="mt-3 flex flex-wrap gap-4"
+        >
           {servPopulares.map((item, index) => {
             const Icon = pageIcons[item.icon]
 
@@ -163,8 +208,14 @@ export function Description() {
 
       {/* LEER ANTES DE RESERVAR */}
       <SectionPage>
-        <h3 className="text-2xl font-bold">Leer antes de reservar</h3>
-        <div className="mt-4 grid grid-cols-1 gap-y-6 rounded-lg border border-[#dfe995] p-8 md:grid-cols-[250px,1fr]">
+        <h3 ref={titleRef6} style={titleStyles6} className="text-2xl font-bold">
+          Leer antes de reservar
+        </h3>
+        <div
+          ref={textRef5}
+          style={textStyles5}
+          className="mt-4 grid grid-cols-1 gap-y-6 rounded-lg border border-[#dfe995] p-8 md:grid-cols-[250px,1fr]"
+        >
           {antesDeReservar.map((item, index) => {
             const Icon = pageIcons[item.icon]
 

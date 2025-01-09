@@ -1,30 +1,50 @@
-import EmblaHomeCarousel from "@/pages/Home/EmblaHomeCarousel"
-import { emblaImages as images } from "./EmblaImages"
 import { DocumentTitle } from "@/components/DocumentTitle"
+import { useFadeInOnce } from "@/hooks/useFadeInOnce"
+import EmblaHomeCarousel from "@/pages/Home/EmblaHomeCarousel"
 import { ROUTES } from "@/routes/RouteConfig"
+import { emblaImages as images } from "./EmblaImages"
 
 const OPTIONS = { loop: true }
 const SLIDES = images
 
 export function Home() {
+  const { ref: titleRef, animationStyles: titleStyles } = useFadeInOnce()
+  const { ref: imgRef, animationStyles: imgStyles } = useFadeInOnce()
+  const { ref: textRef, animationStyles: textStyles } = useFadeInOnce()
+  const { ref: titleRef2, animationStyles: titleStyles2 } = useFadeInOnce()
+  const { ref: imgRef2, animationStyles: imgStyles2 } = useFadeInOnce()
+  const { ref: textRef2, animationStyles: textStyles2 } = useFadeInOnce()
+
   return (
     <>
       <DocumentTitle title={ROUTES.HOME.title} />
       <EmblaHomeCarousel slides={SLIDES} options={OPTIONS} />
       <section className="grid w-full gap-8 px-4 md:mx-auto md:max-w-screen-md md:grid-cols-2 md:gap-8 md:px-8 lg:max-w-screen-lg">
-        <div className="col-span-2 flex flex-col">
+        <div
+          ref={titleRef}
+          style={titleStyles}
+          className="col-span-2 flex flex-col"
+        >
           <h2 className="text-balance text-3xl font-bold md:text-5xl md:[text-wrap:wrap]">
             Descubre tu Rincón de Verano en Las Tres Herraduras
           </h2>
         </div>
-        <div className="col-span-2 md:col-span-1">
+        <div
+          ref={imgRef}
+          style={imgStyles}
+          className="col-span-2 md:col-span-1"
+        >
           <img
             className="w-full rounded-md"
             src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/416784621.jpg?k=fb3102c5c0f80f59b724c425d3e89955ab5816cae39f3873c75d1b1a199eb2c1&o=&hp=1"
             alt=""
           />
         </div>
-        <div className="col-span-2 flex flex-col gap-4 md:col-span-1">
+        <div
+          ref={textRef}
+          style={textStyles}
+          className="col-span-2 flex flex-col gap-4 md:col-span-1"
+        >
           <p>
             Descubre la encantadora Las Tres Herraduras, ¡tu próximo refugio
             veraniego! Ubicada en Las Vertientes de la Granja, este acogedor
@@ -49,12 +69,20 @@ export function Home() {
             km.
           </p>
         </div>
-        <div className="col-span-2 flex flex-col">
+        <div
+          ref={titleRef2}
+          style={titleStyles2}
+          className="col-span-2 flex flex-col"
+        >
           <h2 className="text-balance text-3xl font-bold md:text-5xl md:[text-wrap:wrap]">
             Sumérgete en el Encanto de Las Tres Herraduras
           </h2>
         </div>
-        <div className="col-span-2 flex flex-col md:col-span-1">
+        <div
+          ref={textRef2}
+          style={textStyles2}
+          className="col-span-2 flex flex-col md:col-span-1"
+        >
           <p>
             En Las Tres Herraduras, tu bienestar es nuestra prioridad. Ofrecemos
             WiFi gratuito y estacionamiento privado sin cargo adicional.
@@ -71,7 +99,11 @@ export function Home() {
             Herraduras!
           </p>
         </div>
-        <div className="order-1 col-span-2 md:order-1 md:col-span-1">
+        <div
+          ref={imgRef2}
+          style={imgStyles2}
+          className="order-1 col-span-2 md:order-1 md:col-span-1"
+        >
           <img
             className="w-full rounded-md"
             src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/484436673.jpg?k=37788f514c3f9a978c4598f28b1c78bf7aa7d75c0801d3dfe516568f0a6a926f&o=&hp=1"
