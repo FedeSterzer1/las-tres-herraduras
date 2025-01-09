@@ -1,0 +1,102 @@
+[
+  {
+    "tipo": "info",
+    "icon": "EstacionamientoIcon",
+    "titulo": "Estacionamiento",
+    "contenido": ["Hay parking privado gratis."]
+  },
+  {
+    "tipo": "lista",
+    "icon": "TVIcon",
+    "titulo": "Equipo audiovisual y tecnológico",
+    "contenido": [
+      {
+        "icon": "ListItemIcon",
+        "contenido": "TV de pantalla plana"
+      }
+    ]
+  },
+  {
+    "tipo": "lista",
+    "icon": "PiletaIcon",
+    "titulo": "Pileta",
+    "contenido": [
+      {
+        "icon": "ListItemIcon",
+        "contenido": "Solarium"
+      }
+    ]
+  },
+  {
+    "tipo": "info",
+    "icon": "WifiIcon",
+    "titulo": "Internet",
+    "contenido": [
+      "Hay conexión a internet Wi-Fi disponible en todo el establecimiento. Gratis."
+    ]
+  },
+  {
+    "tipo": "lista",
+    "icon": "HabitacionIcon",
+    "titulo": "Instalaciones de la habitación",
+    "contenido": [
+      {
+        "icon": "ListItemIcon",
+        "contenido": "Calefacción"
+      }
+    ]
+  },
+  {
+    "tipo": "lista",
+    "icon": "VistaIcon",
+    "titulo": "Vistas",
+    "contenido": [
+      {
+        "icon": "ListItemIcon",
+        "contenido": "Vista al jardín"
+      },
+      {
+        "icon": "ListItemIcon",
+        "contenido": "Vista"
+      }
+    ]
+  },
+  {
+    "tipo": "lista",
+    "icon": "CocinaIcon",
+    "titulo": "Cocina",
+    "contenido": [
+      {
+        "icon": "ListItemIcon",
+        "contenido": "Cocina"
+      },
+      {
+        "icon": "ListItemIcon",
+        "contenido": "Lavarropas"
+      },
+      {
+        "icon": "ListItemIcon",
+        "contenido": "Kitchenette"
+      }
+    ]
+  },
+  {
+    "tipo": "lista",
+    "icon": "ExteriorIcon",
+    "titulo": "Exteriores",
+    "contenido": [
+      {
+        "icon": "ListItemIcon",
+        "contenido": "Pileta privada"
+      },
+      {
+        "icon": "ListItemIcon",
+        "contenido": "Balcón"
+      },
+      {
+        "icon": "ListItemIcon",
+        "contenido": "Terraza"
+      }
+    ]
+  }
+]

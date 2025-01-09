@@ -1,0 +1,18 @@
+[
+  {
+    "contenido": "Pileta",
+    "icon": "PiletaIcon"
+  },
+  {
+    "contenido": "Estacionamiento",
+    "icon": "EstacionamientoIcon"
+  },
+  {
+    "contenido": "WI-FI",
+    "icon": "WifiIcon"
+  },
+  {
+    "contenido": "Terraza",
+    "icon": "TerrazaIcon"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "titulo": "Entrada",
+    "info": [
+      {
+        "titulo": "",
+        "contenido": "De 14:00 a 22:00"
+      },
+      {
+        "titulo": "",
+        "contenido": "Tenés que indicarle al alojamiento con anticipación en qué horario vas a llegar."
+      }
+    ],
+    "icon": "EntradaIcon"
+  },
+  {
+    "titulo": "Salida",
+    "info": [
+      {
+        "titulo": "",
+        "contenido": "De 07:00 a 10:00"
+      }
+    ],
+    "icon": "SalidaIcon"
+  },
+  {
+    "titulo": "Cancelación / pago por adelantado",
+    "info": [
+      {
+        "titulo": "",
+        "contenido": "Las políticas de cancelación y de pago por adelantado pueden variar según el tipo de alojamiento. Ingresá las fechas de tu estadía y consulta las condiciones de la habitación seleccionada."
+      }
+    ],
+    "icon": "InfoIcon"
+  },
+  {
+    "titulo": "Depósito contra daños reembolsable",
+    "info": [
+      {
+        "titulo": "",
+        "contenido": "Se solicita un depósito contra daños de USD 150 al llegar. Son aproximadamente ARS 52495.71. Se va a cobrar en efectivo. Se te devuelve después del check-out. Se va a reembolsar en efectivo la totalidad de tu depósito. Esto está sujeto a una inspección por parte de la propiedad."
+      }
+    ],
+    "icon": "InfoIcon"
+  },
+  {
+    "titulo": "Camas para niños",
+    "info": [
+      {
+        "titulo": "Políticas de menores",
+        "contenido": "Se pueden hospedar niños de todas las edades. Para ver la información correcta sobre los precios y la ocupación, agregá a tu búsqueda la cantidad de menores de tu grupo y sus edades."
+      },
+      {
+        "titulo": "Políticas de camas adicionales y cunas",
+        "contenido": "No hay cunas ni camas extra disponibles."
+      }
+    ],
+    "icon": "FamilyIcon"
+  },
+  {
+    "titulo": "Restricción de edad",
+    "info": [
+      {
+        "titulo": "",
+        "contenido": "Edad mínima para hacer el check-in: 18"
+      }
+    ],
+    "icon": "PersonIcon"
+  },
+  {
+    "titulo": "Solo efectivo",
+    "info": [
+      {
+        "titulo": "",
+        "contenido": "Esta propiedad solo acepta pagos en efectivo."
+      }
+    ],
+    "icon": "PagoIcon"
+  },
+  {
+    "titulo": "Política de fumadores",
+    "info": [
+      {
+        "titulo": "",
+        "contenido": "No está permitido fumar."
+      }
+    ],
+    "icon": "ProhibidoFumarIcon"
+  },
+  {
+    "titulo": "Fiestas",
+    "info": [
+      {
+        "titulo": "",
+        "contenido": "No está permitido hacer fiestas ni eventos."
+      }
+    ],
+    "icon": "BebidaIcon"
+  },
+  {
+    "titulo": "Mascotas",
+    "info": [
+      {
+        "titulo": "",
+        "contenido": "No se admiten."
+      }
+    ],
+    "icon": "MascotaIcon"
+  }
+]
