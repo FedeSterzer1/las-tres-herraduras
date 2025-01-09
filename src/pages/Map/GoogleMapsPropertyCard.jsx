@@ -6,7 +6,7 @@ import {
   MuseumIcon,
   RestaurantMapIcon,
   SquareIcon,
-} from "@/icons/icons"
+} from "@/icons/Icons"
 import "@/pages/Map/GoogleMap.css"
 
 export function GoogleMapsPropertyCard({ property }) {
