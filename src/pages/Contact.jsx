@@ -57,13 +57,13 @@ export function Contact() {
               <div className="flex items-center gap-4">
                 <a
                   className="flex items-center gap-4"
-                  href="https://www.instagram.com/lastresherraduras.casadecampo/"
+                  href="https://www.instagram.com/lastresherraduras.cba"
                   target="_blank"
                 >
                   <InstagramIcon className="h-12 w-12" color="#4f5712" />
                   <div>
                     <p className="text-md font-bold">Instagram</p>
-                    lastresherraduras.casadecampo
+                    lastresherraduras.cba
                   </div>
                 </a>
               </div>

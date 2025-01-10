@@ -28,10 +28,10 @@ export function Footer() {
               <InstagramIcon className="inline-block h-6 w-6" color="#dfe995" />
 
               <a
-                href="https://www.instagram.com/lastresherraduras.casadecampo/"
+                href="https://www.instagram.com/lastresherraduras.cba"
                 target="_blank"
               >
-                lastresherraduras.casadecampo
+                lastresherraduras.cba
               </a>
             </li>
           </ul>
