@@ -37,16 +37,13 @@ export function Header() {
       className="fixed inset-0 z-30 flex h-28 w-full transform items-center gap-4 bg-[#565843] px-4 text-white backdrop-blur transition-all duration-300"
     >
       <div className="flex w-full items-center justify-between gap-4 py-4 md:mx-auto md:max-w-screen-md md:px-4 lg:max-w-screen-lg">
-        <Link to="/">
-          <div className="flex h-auto flex-col items-center">
+        <Link to="/" className="block size-full">
+          <div className="flex h-[100px] items-center py-4">
             <img
-              className="w-[96px] rounded-xl object-contain"
+              className="block h-full object-contain"
               src="/images/logo_trimmed.png"
               alt="Las Tres Herraduras"
             />
-            <h1 className="text-xl font-semibold text-white">
-              Las Tres Herraduras
-            </h1>
           </div>
         </Link>
         <Navigation />

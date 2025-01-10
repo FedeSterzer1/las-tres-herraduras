@@ -52,9 +52,6 @@ export function Footer() {
                 src="/images/logo_trimmed.png"
                 alt="Las Tres Herraduras"
               />
-              <span className="text-2xl font-semibold">
-                Las Tres Herraduras
-              </span>
             </div>
           </div>
         </div>
