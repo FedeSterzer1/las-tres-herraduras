@@ -56,10 +56,8 @@ export function Footer() {
           </div>
         </div>
       )}
-      {/* <div className="flex w-full border-t border-[#dfe995] justify-center gap-12 p-4 md:mx-auto md:max-w-screen-md md:gap-8 md:px-8 lg:max-w-screen-lg"> */}
       <div className="flex w-full justify-center gap-12 border-t border-[#dfe995] p-4 md:mx-auto md:gap-8 md:px-8">
         <span>
-          {/* Copyright © 2025 Kudos Commerce. Todos los derechos reservados. */}
           Copyright © {new Date().getFullYear()} Las Tres Herraduras.
         </span>
       </div>
