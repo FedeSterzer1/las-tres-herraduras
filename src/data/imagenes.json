@@ -1,6 +1,12 @@
 [
   [
     {
+      "original": "https://res.cloudinary.com/diep0bgh5/image/upload/fl_preserve_transparency/v1736375542/Las%20Tres%20Herraduras/1000077043_ngozya.jpg?_s=public-apps",
+      "thumbnail": "https://res.cloudinary.com/diep0bgh5/image/upload/fl_preserve_transparency/v1736375542/Las%20Tres%20Herraduras/1000077043_ngozya.jpg?_s=public-apps",
+      "originalTitle": "Entrada interior",
+      "category": "Entrada"
+    },
+    {
       "original": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/407345982.jpg?k=a33fc1061cced151f173e27e661fce25fafa9ee043c01e842cdfff2596cdcf1f&o=&hp=1",
       "thumbnail": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/407345982.jpg?k=a33fc1061cced151f173e27e661fce25fafa9ee043c01e842cdfff2596cdcf1f&o=&hp=1",
       "originalTitle": "Entrada exterior",
@@ -32,6 +38,18 @@
     }
   ],
   [
+    {
+      "original": "https://res.cloudinary.com/diep0bgh5/image/upload/fl_preserve_transparency/v1736375358/Las%20Tres%20Herraduras/1000015080_imsrb5.jpg?_s=public-apps",
+      "thumbnail": "https://res.cloudinary.com/diep0bgh5/image/upload/fl_preserve_transparency/v1736375358/Las%20Tres%20Herraduras/1000015080_imsrb5.jpg?_s=public-apps",
+      "originalTitle": "Living y cocina",
+      "category": "Living/Cocina"
+    },
+    {
+      "original": "https://res.cloudinary.com/diep0bgh5/image/upload/fl_preserve_transparency/v1736375358/Las%20Tres%20Herraduras/1000016172_ewqvk8.jpg?_s=public-apps",
+      "thumbnail": "https://res.cloudinary.com/diep0bgh5/image/upload/fl_preserve_transparency/v1736375358/Las%20Tres%20Herraduras/1000016172_ewqvk8.jpg?_s=public-apps",
+      "originalTitle": "Living y cocina",
+      "category": "Living/Cocina"
+    },
     {
       "original": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/407345990.jpg?k=efbe565d18d8f915dcf982a36c60682dc3c3a9d23042a250b83193cc85dbae61&o=&hp=1",
       "thumbnail": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/407345990.jpg?k=efbe565d18d8f915dcf982a36c60682dc3c3a9d23042a250b83193cc85dbae61&o=&hp=1",
@@ -163,6 +181,12 @@
       "category": "Exterior"
     },
     {
+      "original": "https://res.cloudinary.com/diep0bgh5/image/upload/fl_preserve_transparency/v1736375400/Las%20Tres%20Herraduras/1000077039_ptscew.jpg?_s=public-apps",
+      "thumbnail": "https://res.cloudinary.com/diep0bgh5/image/upload/fl_preserve_transparency/v1736375400/Las%20Tres%20Herraduras/1000077039_ptscew.jpg?_s=public-apps",
+      "originalTitle": "Exterior 1",
+      "category": "Exterior"
+    },
+    {
       "original": "https://res.cloudinary.com/diep0bgh5/image/upload/v1706136518/Las%20Tres%20Herraduras/IMG-20240124-WA0018_ball4m.jpg",
       "thumbnail": "https://res.cloudinary.com/diep0bgh5/image/upload/v1706136518/Las%20Tres%20Herraduras/IMG-20240124-WA0018_ball4m.jpg",
       "originalTitle": "Exterior 2",
@@ -215,6 +239,12 @@
     {
       "original": "https://res.cloudinary.com/diep0bgh5/image/upload/v1706136516/Las%20Tres%20Herraduras/IMG-20240124-WA0015_loc9k5.jpg",
       "thumbnail": "https://res.cloudinary.com/diep0bgh5/image/upload/v1706136516/Las%20Tres%20Herraduras/IMG-20240124-WA0015_loc9k5.jpg",
+      "originalTitle": "Pileta 4",
+      "category": "Pileta"
+    },
+    {
+      "original": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/417195551.jpg?k=83367ff3cb2fcc7e65cd474a85841b34e8ebff4887dd6c5775bd8a7469299315&o=&hp=1",
+      "thumbnail": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/417195551.jpg?k=83367ff3cb2fcc7e65cd474a85841b34e8ebff4887dd6c5775bd8a7469299315&o=&hp=1",
       "originalTitle": "Pileta 4",
       "category": "Pileta"
     }
