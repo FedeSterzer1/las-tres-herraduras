@@ -53,10 +53,9 @@ export function Opinions() {
               <h3 className="text-2xl font-semibold">Linda experiencia</h3>
               <p>
                 Las habitaciones son amplias y luminosas, con vistas a la
-                naturaleza. El baño es privado y cuenta con todo lo necesario
-                para un buen descanso. La cocina está equipada con todo lo
-                necesario para cocinar, y el comedor es perfecto para compartir
-                las comidas con los amigos o la familia.
+                naturaleza. La cocina está equipada con todo lo necesario para
+                cocinar, el comedor es perfecto para compartir comidas, y la
+                pileta es ideal para disfrutar y relajarse al aire libre.
               </p>
             </div>
           </div>
@@ -86,6 +85,32 @@ export function Opinions() {
                 cortarla y disfrutar del ambiente natural de Las Tres
                 Herraduras. ¡Una escapada perfecta para descansar y pasarla bien
                 en las sierras cordobesas!
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="mt-8 flex w-full flex-col p-6"
+            style={{ boxShadow: "0px 0px 15px -0px rgba(0,0,0,0.10)" }}
+          >
+            <div className="mb-8 flex justify-between">
+              <h3 className="text-[12px] font-extrabold uppercase tracking-wider text-[#aaaaaa]">
+                Lucas
+              </h3>
+              <span className="flex">
+                <StarIcon className="h-4 w-4" />
+                <StarIcon className="h-4 w-4" />
+                <StarIcon className="h-4 w-4" />
+                <StarIcon className="h-4 w-4" />
+                <StarIcon className="h-4 w-4" />
+              </span>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h3 className="text-2xl font-semibold">Casa ideal</h3>
+              <p>
+                Una casa de campo hermosa, perfecta para relajarse y disfrutar
+                de la tranquilidad del lugar. Todo está cuidado y las vistas son
+                increíbles, ideal para desconectarse del día a día.
               </p>
             </div>
           </div>
